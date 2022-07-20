@@ -16,7 +16,7 @@
              compatible = "zmk,behavior-tap-dance";
              label = "TAP_DANCE_0";
              #binding-cells = <0>;
-             tapping-term-ms = <100>;
+             tapping-term-ms = <150>;
              bindings = <&mt LSHFT LPAR>, <&caps_word>;
         };
 
@@ -24,7 +24,7 @@
              compatible = "zmk,behavior-tap-dance";
              label = "TAP_DANCE_1";
              #binding-cells = <0>;
-             tapping-term-ms = <100>;
+             tapping-term-ms = <150>;
              bindings = <&mt LSHFT RPAR>, <&caps_word>;
         };
     };
