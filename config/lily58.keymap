@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 &mt {
-    retro-tap;
+    tapping-term-ms = <0>;
 };
 
 / {
