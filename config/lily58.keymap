@@ -52,8 +52,8 @@
 		lower_layer {
 // ------------------------------------------------------------------------------------------------------------
 // | BTCLR    | BT1 | BT2 | BT3 | BT4 | BT5 |          |     |     |    | OUT_USB | OUT_BLE | OUT_TOG |
-// | CAPS_WRD |HOME | UP  | END |PG_UP|     |          |     |     |    |    (    |    )    |         |
-// |    `     |LEFT |DOWN |RIGHT|PG_DN|     |          |     |     |    |    [    |    ]    |    ~    |
+// | CAPS_WRD | HOME| UP  | END |PG_UP|     |          |     |     |    |    (    |    )    |         |
+// |    `     | LEFT| DOWN|RIGHT|PG_DN|     |          |     |     |    |    [    |    ]    |    ~    |
 // |          |     |     |     |     |     |   |  |   |     |     |    |    {    |    }    |   "|"   |
 //                        |     |     |     |   |  |   | DEL |     |    |
 			bindings = <
@@ -69,13 +69,13 @@
 
 		raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |        |    |    |     |     |     |                   |      |       |       |     |   |   |
+// |        |    |    |     |     |     |                   | PLAY | VOL_UP| VOL_DN| MUTE|   |   |
 // |CAPS_WRD|    |    |     |     |     |                   | HOME | PG_DN | PG_UP | END | ( | ) |
 // |   F1   | F2 | F3 | F4  | F5  | F6  |                   | <-   |   v   |   ^   |  -> | [ | ] |
 // |   F7   | F8 | F9 | F10 | F11 | F12 |        |  |       |  *   |   -   |   +   |  =  | { | } |
 //                    |     |     |     |        |  |       |      |       |       |
 			bindings = <
-&trans     &trans &trans &trans  &trans  &trans                &trans   &trans    &trans      &trans    &trans   &trans
+&trans     &trans &trans &trans  &trans  &trans                &K_PP    &K_VOL_DN &K_VOL_UP   &K_MUTE   &trans   &trans
 &caps_word &trans &trans &trans  &trans  &trans                &kp HOME &kp PG_DN &kp PG_UP   &kp END   &kp LPAR &kp RPAR
 &kp F1     &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                &kp LEFT &kp DOWN  &kp UP      &kp RIGHT &kp LBKT &kp RBKT
 &kp F7     &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &trans &trans &kp STAR &kp MINUS &kp KP_PLUS &kp EQUAL &kp LBRC &kp RBRC
